@@ -1,0 +1,9 @@
+[package]
+name = "scheduling-app"
+version = "0.1.0"
+authors = ["elang"]
+edition = "2018"
+
+[dependencies]
+actix = "0.7.9"
+actix-web = "0.7.16"

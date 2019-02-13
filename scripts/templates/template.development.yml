@@ -1,0 +1,10 @@
+version: "3.3"
+
+services:
+  db:
+    container_name: scheduling_dev_db
+    environment:
+      PSQL_USER: ${APP_DEVELOPMENT_USER}
+      PSQL_PASSWORD: ${APP_DEVELOPMENT_PASS}
+      PSQL_DB: ${APP_DEVELOPMENT_DB}
+    restart: on-failure

@@ -1,0 +1,32 @@
+[package]
+name = "scheduling_infrastructure"
+version = "0.1.0"
+authors = ["elang"]
+edition = "2018"
+
+[[bin]]
+name = "seed"
+path = "src/seed.rs"
+
+[dependencies]
+
+# UUID
+uuid =  { version = "0.7.1", features = ["v4"] }
+
+# Time library
+chrono = { version = "0.4.6", features = ["serde"] }
+
+# DB 
+diesel = { version = "1.4.1", features = ["postgres", "r2d2"] }
+
+# Connection Manager
+r2d2 = "0.8.3"
+
+# Fake for seeding database
+fake = "1.2.2"
+
+# SYS 
+dotenv = "0.13.0"
+
+# Hashing and Encryption
+bcrypt = "0.2.1"
